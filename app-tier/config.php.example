@@ -1,0 +1,8 @@
+<?php
+// Copy this file to config.php on the application server.
+// Replace every placeholder. Never commit config.php or real credentials.
+
+define("DB_HOST", "YOUR_RDS_ENDPOINT");
+define("DB_NAME", "registration_db");
+define("DB_USER", "registration_user");
+define("DB_PASS", "REPLACE_WITH_A_STRONG_PASSWORD");

@@ -1,0 +1,25 @@
+# Example server block for the PRIVATE application-tier Nginx.
+# Ensure PHP-FPM is installed and its socket/path matches your OS and PHP version.
+# The socket below is an example; verify it on your server before use.
+# Validate with: sudo nginx -t
+
+server {
+    listen 80;
+    server_name _;
+
+    root /var/www/html;
+    index index.php index.html;
+
+    location / {
+        try_files $uri $uri/ =404;
+    }
+
+    location ~ \.php$ {
+        include snippets/fastcgi-php.conf;
+        fastcgi_pass unix:/run/php/php-fpm.sock;
+    }
+
+    location ~ /\. {
+        deny all;
+    }
+}
