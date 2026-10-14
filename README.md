@@ -3,8 +3,6 @@
 
 This repository documents a practical AWS project built while learning cloud computing, Linux, networking, and DevOps fundamentals. It demonstrates a web registration form, an application server, and a managed MySQL database connected through AWS networking.
 
-> **Project scope:** This is a learning project. Some configuration files are examples and use placeholders. Review and adapt them to match your actual AWS resources before deploying.
-
 ## Architecture
 
 ```mermaid
@@ -115,17 +113,6 @@ The `screenshots/` folder contains redacted evidence from the AWS console and re
 - SQL database and table creation
 - PHP form validation, password hashing, and prepared statements
 - Troubleshooting and documenting a multi-tier cloud setup
-
-## Future improvements
-
-- Configure HTTPS with TLS
-- Add monitoring and centralized logging
-- Automate infrastructure with Terraform
-- Add CI/CD for deployment
-- Practice backup and recovery procedures
-- Explore load balancing and high availability
-
-These are future learning goals, not features claimed as already implemented.
 
 ## Learning approach
 
